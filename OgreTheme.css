@@ -46,7 +46,7 @@ background-color: #423d29;
     font-size: 30px;
   }
 
-  .header {
+  div.header {
     padding: 2px;
     text-align: center;
     background: rgb(51, 102, 35);
