@@ -40,6 +40,6 @@ background-color: #423d29;
   }
   
   .navbar a.active {
-    background-color: #04AA6D;
+    background-color: rgb(51, 102, 35);
     color: white;
   }
