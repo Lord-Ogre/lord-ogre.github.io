@@ -5,4 +5,28 @@
         <link rel="icon" type="image/x-icon" href="./ogre.png">
     </head>
 
+    <body>
+        <h1>Lord Ogre</h1>
+        <p>Come back later this isn't done yet.</p>
+
+        <div class="navbar">
+            <a href="./index.html" >Home</a>
+            <a href="./commands.html">Commands</a>
+            <a href="./contact.html"class="active">Contact</a>
+          </div>
+    </body>
+
+    <script>
+        function sendWebhook() {
+            const whurl = "https://discord.com/api/webhooks/1286845433053839471/eS__4yB46dINQwSxjlIopTX2jeiH4DsnFIpcNbpSpge1ORzMLYc31pfW3B6wZRFTjy9b"
+
+            const msg = {
+                "content":"testmessage"
+            }
+
+            fetch(whurl,{"method":"POST","headers":{"content-type":"application/json"},"body": JSON.stringify(msg)})
+        }
+    </script>
+
+
 </html>

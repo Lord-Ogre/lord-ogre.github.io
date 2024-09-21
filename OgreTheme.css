@@ -20,7 +20,7 @@ background-color: #423d29;
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 50;
+    height: 60;
     width: 100%;
   }
   
@@ -42,5 +42,14 @@ background-color: #423d29;
   .navbar a.active {
     background-color: rgb(51, 102, 35);
     color: white;
+    text-align: center;
     font-size: 30px;
+  }
+
+  .header {
+    padding: 2px;
+    text-align: center;
+    background: rgb(51, 102, 35);
+    color: wheat;
+    font-size: 20px;
   }
