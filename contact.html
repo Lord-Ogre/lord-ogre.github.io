@@ -8,9 +8,33 @@
     <body>
         <div class="header">
       <h1>Lord Ogre</h1>
-      <p>Contact</p>
+      <p>Contact - No php yet so im currently krilled</p>
     </div>
-        <h1>Come back later this isn't done yet.</h1>
+    <br></br>
+        
+        <div class="container">
+  <form action="action_page.php">
+
+    <label for="dname">Discord Name</label>
+    <input type="text" id="dname" name="discordname" placeholder="Your discord name..">
+
+    <label for="did">Discord Id</label>
+    <input type="text" id="did" name="discordid" placeholder="Your discord id..">
+
+    <label for="reason">Reason</label>
+    <select id="reason" name="reason">
+      <option value="bugfix">Bug Fix</option>
+      <option value="newfeature">New Feature</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
         <!--<p id="responseText">Yellow</p>-->
         <div class="navbar">
             <a href="./index.html" >Home</a>
