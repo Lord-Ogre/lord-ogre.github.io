@@ -16,6 +16,7 @@ a:link {
 
 body {
 background-color: #423d29;
+padding: 16px;
 }
 
   div.navbar {
@@ -91,3 +92,4 @@ input[type=submit]:hover {
   background-color: #333;
   padding: 20px;
 }
+
