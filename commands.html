@@ -20,13 +20,31 @@
     </div>
     <br></br>
     <h2 id="Battle Attack">/Battle Attack [player to attack] [number of warriors]</h2>
-    <p>Attack other player's swamp's for glory, moola, and ONIONS! Keep in mind that you can only attack people who are in the same discord server!</p>
+    <p>Attack other player's swamp's for glory, moola, and ONIONS! Keep in mind that you can only attack people who are in the same discord server!
+      [player to attack] - The user you wish to attack.
+      [number of warriors] - The number of warriors you wish to send.
+    </p>
     <br></br>
     <h2 id="Battle Reinforce">/Battle Reinforce [number of warriors]</h2>
-    <p>Sends more warriors to the battle you are currently fighting. Keep in mind that reinforcements have the same travel time as the initial attack.</p>
+    <p>Sends more warriors to the battle you are currently fighting. Keep in mind that reinforcements have the same travel time as the initial attack.
+      [number of warriors] - The number of additional warriors you want to send to battle
+    </p>
     <br></br>
     <h2 id="Battle Stats">/Battle Stats</h2>
     <p>Check on the statistics of the current battle you are fighting</p>
+    <br></br>
+    <h2 id="Battle Spy">/Battle Spy [player to spy] </h2>
+    <p>Send a warrior to spy on another player's swamp.
+      [player to spy] - Who's swamp you wish to spy on.
+    </p>
+    <br></br>
+    <h2 id="Battle Retreat">/Battle Retreat </h2>
+    <p>Lose your attacking battle, but keep more warriors.</p>
+    <br></br>
+    <h2 id="Battle Surrender">/Battle Stats [surrender to]</h2>
+    <p>Lose your defending battle, but keep more warriors. 
+      [surrender to] - The player who you want to lose to.
+    </p>
     <br></br>
     <h2 id="Bogredlc">/Bogredlc</h2>
     <p>??</p>
@@ -34,8 +52,18 @@
     <h2 id="Daily">/Daily</h2>
     <p>Collect your daily reward from interacting with the bot. Get a streak for more rewards</p>
     <br></br>
-    <h2 id="Employ">/Employ</h2>
-    <p>Starts training ogres to become a specialized type of ogre.</p>
+    <h2 id="Donate">/Donate [resource] [quantity] [sendtouser]</h2>
+    <p>Send resources to friends to work together easier.
+      [resource] - What to send. Valid inputs: Onions, Ore and Money
+      [quantity] - How many to send.
+      [sendtouser] - Who you want to send the gift to. They must be in the same discord server
+    </p>
+    <br></br>
+    <h2 id="Employ">/Employ [number of ogres] [ogretype] </h2>
+    <p>Starts training ogres to become a specialized type of ogre.
+      [number of ogres] - how many unemployed ogres to train.
+      [ogretype] - which type of ogre to train. Valid inputs: Farmer, Miner or Warrior.
+    </p>
     <br></br>
     <h2 id="Findogres">/Findogres</h2>
     <p>Searches bogs and swamps for ogres.</p>
@@ -49,8 +77,10 @@
     <h2 id="Homechannel">/Homechannel</h2>
     <p>Sets the channel where you get notifications. Some notifications will always go to direct messages.</p>
     <br></br>
-    <h2 id="Leaderboard">/Leaderboard</h2>
-    <p>See who is the Swamp Elite.</p>
+    <h2 id="Leaderboard">/Leaderboard [scope]</h2>
+    <p>See who is the Swamp Elite.
+      [scope] - Personal: View personal ranking in leaderboard catagories. Global: View ranking of all swamps.
+    </p>
     <br></br>
     <h2 id="List">/List</h2>
     <p>Shows all swamps in every discord server.</p>
@@ -58,14 +88,23 @@
     <h2 id="Market Buy">/Market Buy</h2>
     <p>Buy from a current listing on the market. You can only buy from people in the same discord server</p>
     <br></br>
+    <h2 id="Market Globalbuy">/Market Globalbuy [resourcetobuy] [quantity] [user]</h2>
+    <p>Buy from a current listing on the market. You can only buy from people in the same discord server
+      [resourcetobuy] - What to buy? Onions or Ore.
+      [quantity] - How many to buy?
+      [user] - The display name of the user you wish to buy from. It's the same as the name listed in the market listing.
+    </p>
+    <br></br>
     <h2 id="Market Delist">/Market Delist</h2>
     <p>Removes one of your postings from the market.</p>
     <br></br>
     <h2 id="Market History">/Market History</h2>
     <p>Downloads a .csv file containing all market transactions. Intended for importing to a spreadsheet program.</p>
     <br></br>
-    <h2 id="Market Listings">/Market Listings</h2>
-    <p>shows the current listings on the market. Will only show listings posted by users in the same discord server.</p>
+    <h2 id="Market Listings">/Market Listings [international]</h2>
+    <p>shows the current listings on the market. Will only show listings posted by users in the same discord server.
+      [international] - View the international or Local market.
+    </p>
     <br></br>
     <h2 id="Market Post">/Market Post</h2>
     <p>Posts a new listing to the market. You can only have one listing of each type of resource.</p>
@@ -80,7 +119,9 @@
     <p>Creates a new swamp. only will function if the user has no active swamp.</p>
     <br></br>
     <h2 id="Ogrerecall">/Ogrerecall [filename + extension]</h2>
-    <p>Recalls a file previously remembered with <a href="./commands#Ogreremember">/Ogreremember</a>.</p>
+    <p>Recalls a file previously remembered with <a href="./commands#Ogreremember">/Ogreremember</a>.
+    [filename + extension] - the file listed in "ogrejoin list" which should be recalled.
+  </p>
     <br></br>
     <h2 id="Ogreremember">/Ogreremember [file]</h2>
     <p>Saves a file in Lord Ogre's memory.</p>
@@ -88,8 +129,11 @@
     <h2 id="Ogretype">/Ogretype</h2>
     <p>Lists information about each type of ogre. Such as cost, hunger, ore use and happiness.</p>
     <br></br>
-    <h2 id="Policy Set">/Policy Set</h2>
-    <p>Sets a policy in your swamp.</p>
+    <h2 id="Policy Set">/Policy Set [policyname] [value] </h2>
+    <p>Sets a policy in your swamp.
+      [policyname] - What policy to change: tax, projectrate, oglimiter or civiliandefending. civiliandefending only has an effect at 100%
+      [value] - desired value for the policy
+    </p>
     <br></br>
     <h2 id="Policy View">/Policy View</h2>
     <p>Shoes the policies currently set in your swamp.</p>
@@ -97,8 +141,11 @@
     <h2 id="Stats">/Stats</h2>
     <p>Tells you general information regarding the status of your swamp and how long until the next logic tick.</p>
     <br></br>
-    <h2 id="Unemploy">/Unemploy</h2>
-    <p>Unemploy ogres to cut costs or to promote population growth.</p>
+    <h2 id="Unemploy">/Unemploy [quantity] [ogretype]</h2>
+    <p>Unemploy ogres to cut costs or to promote population growth.
+      [quantity] - how many ogres to unemploy.
+      [ogretype] - what type of ogre to unemploy: farmer, miner or warrior?
+    </p>
     <br></br>
     
     
