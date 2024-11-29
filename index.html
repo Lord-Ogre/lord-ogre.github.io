@@ -59,10 +59,16 @@
 </html>
 
 <script> 
+ var audio = new Audio('./Shreksophone.mp3');
+ audio.loop = true;
   function play() {
-  var audio = new Audio('./Shreksophone.mp3');
-  audio.loop = true;
-  audio.play();
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+  
+  
   }
 
 </script>
